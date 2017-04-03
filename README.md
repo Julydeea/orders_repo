@@ -1,6 +1,6 @@
 ## Orders and Distributions Solution
 
-###### Project Organization:
+#### Project Organization:
 
 * db
 
@@ -28,7 +28,7 @@
   
   - index.js - creates the server and routes to access the two endpoints 
 
-###### The Order Prices output:
+#### The Order Prices output:
 
 ```
 Order ID: 20150111000001
@@ -49,7 +49,7 @@ Order ID: 20150123000001
         Order total: $46.00
 ```
 
-###### The Funds Distribution output:
+#### The Funds Distribution output:
 
 ```
 Order ID: 20150111000001
