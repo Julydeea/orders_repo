@@ -2,12 +2,19 @@
 
 ###### Project Organization:
 .
+
 +-- db  
+
 |   +-- db.js - provides access to data that is to be processed (orders.js, fees,js)
+
 +-- distributions: 
+
 |   +-- controller.js - contains the functions necessary to process the funds distribution for each of the orders
+
 |   +-- view.js - formats the console output
+
 |   +-- index.js - provides access to the controller
+
 +-- helper:
 |   +-- fees_helper.js - provides fees information necessary to process orders and 
 distributions. This is meant to separate the fee processing from the order processing.
