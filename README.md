@@ -1,28 +1,32 @@
 ## Orders and Distributions Solution
 
 ###### Project Organization:
-.
 
-+-- db  
+* db
 
-|   +-- db.js - provides access to data that is to be processed (orders.js, fees,js)
+  - db.js - provides access to data that is to be processed (orders.js, fees,js)
+  
+* distributions
 
-+-- distributions: 
+  -  controller.js - contains the functions necessary to process the funds distribution for each of the orders
+   
+  -  view.js - formats the console output
 
-|   +-- controller.js - contains the functions necessary to process the funds distribution for each of the orders
+  - index.js - provides access to the controller
 
-|   +-- view.js - formats the console output
+* helper
 
-|   +-- index.js - provides access to the controller
+  - fees_helper.js - provides fees information necessary to process orders and  distributions. This is meant to separate the fee processing from the order processing
+  
+* orders
 
-+-- helper:
-|   +-- fees_helper.js - provides fees information necessary to process orders and 
-distributions. This is meant to separate the fee processing from the order processing.
-+-- orders:
-|   +-- controller.js - contains the functions necessary to process the prices for each orders
-|   +-- view.js - formats the console output
-|   +-- index.js - provides access to the controller
-+-- index.js - creates the server and routes to access the two endpoints 
+  - controller.js - contains the functions necessary to process the prices for each orders
+  
+  - view.js - formats the console output
+  
+  - index.js - provides access to the controller
+  
+  - index.js - creates the server and routes to access the two endpoints 
 
 ###### The Order Prices output:
 
