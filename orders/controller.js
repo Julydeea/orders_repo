@@ -1,6 +1,5 @@
 /*controller used for the computation of order fees */
 var feesHelper = require('../helper/fees_helper');
-var db_orders = require("../db/db");
 var view = require("./view");
 
 /**
@@ -35,7 +34,7 @@ function processOrders(orders) {
   * @return display of the order prices to console
 **/
 module.exports = function(req, res) {
-  var orders = db_orders.orders;
+  var orders = req.body;
   var ordersJson = processOrders(orders);
   console.log(view.formatOrders(ordersJson));
 

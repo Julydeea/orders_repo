@@ -1,6 +1,5 @@
 /*controller used for funds distribution computation*/
 var feesHelper = require("../helper/fees_helper");
-var db_orders = require("../db/db");
 var view = require("./view");
 
 /**
@@ -79,7 +78,7 @@ function processDistributions(orders) {
   * @return display of the funds distribution to console
 **/
 module.exports = function(req, res) {
-    var orders = db_orders.orders;
+    var orders = req.body;
     var funds_json = processDistributions(orders);
     console.log(view.formatFunds(funds_json));
 
