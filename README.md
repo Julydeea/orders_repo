@@ -1,23 +1,34 @@
 ## Orders and Distributions Solution
 
-###### Project Organization:
-.
-+-- db  
-|   +-- db.js - provides access to data that is to be processed (orders.js, fees,js)
-+-- distributions: 
-|   +-- controller.js - contains the functions necessary to process the funds distribution for each of the orders
-|   +-- view.js - formats the console output
-|   +-- index.js - provides access to the controller
-+-- helper:
-|   +-- fees_helper.js - provides fees information necessary to process orders and 
-distributions. This is meant to separate the fee processing from the order processing.
-+-- orders:
-|   +-- controller.js - contains the functions necessary to process the prices for each orders
-|   +-- view.js - formats the console output
-|   +-- index.js - provides access to the controller
-+-- index.js - creates the server and routes to access the two endpoints 
+#### Project Organization:
 
-###### The Order Prices output:
+* db
+
+  - db.js - provides access to data that is to be processed (orders.js, fees,js)
+  
+* distributions
+
+  -  controller.js - contains the functions necessary to process the funds distribution for each of the orders
+   
+  -  view.js - formats the console output
+
+  - index.js - provides access to the controller
+
+* helper
+
+  - fees_helper.js - provides fees information necessary to process orders and  distributions. This is meant to separate the fee processing from the order processing
+  
+* orders
+
+  - controller.js - contains the functions necessary to process the prices for each orders
+  
+  - view.js - formats the console output
+  
+  - index.js - provides access to the controller
+  
+  - index.js - creates the server and routes to access the two endpoints 
+
+#### The Order Prices output:
 
 ```
 Order ID: 20150111000001
@@ -38,7 +49,7 @@ Order ID: 20150123000001
         Order total: $46.00
 ```
 
-###### The Funds Distribution output:
+#### The Funds Distribution output:
 
 ```
 Order ID: 20150111000001
@@ -68,12 +79,12 @@ Order ID: 20150123000001
          Fund - Vital Statistics Preservation Fee: $2.00
          Fund - Other: $2.00
 Total distributions:
-        Fund - Recording Fee: $10.00
-        Fund - Records Management and Preservation Fee: $20.00
-        Fund - Records Archive Fee: $20.00
-        Fund - Courthouse Security: $2.00
-        Fund - Other: $2.00
-        Fund - County Clerk Fee: $20.00
-        Fund - Vital Statistics Fee: $1.00
-        Fund - Vital Statistics Preservation Fee: $1.00
+        Fund - Recording Fee: $25.00
+        Fund - Records Management and Preservation Fee: $50.00
+        Fund - Records Archive Fee: $50.00
+        Fund - Courthouse Security: $5.00
+        Fund - County Clerk Fee: $60.00
+        Fund - Vital Statistics Fee: $3.00
+        Fund - Vital Statistics Preservation Fee: $3.00
+        Fund - Other: $29.00
 ```
