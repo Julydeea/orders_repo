@@ -6,7 +6,7 @@ var view = require("./view");
 /**
  * @desc compute the distribution of funds for an order
  * @param the type of the order
- * @param refecente to the object that will contain all
+ * @param reference to the object that will contain all
  * funds distributions for the current order
 **/
 function getOrderDistribution(orderType, orderDistrib) {
