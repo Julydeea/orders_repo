@@ -9,7 +9,7 @@ var orders = require('./orders'),
 app.set('json spaces', 2);
 app.use(bodyParser.json());
 /** @desc homepage route **/
-app.get('/', function(req, res) {
+app.get('/*', function(req, res) {
   res.end();
 });
 
